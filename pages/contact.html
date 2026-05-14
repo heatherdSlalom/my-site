@@ -1,218 +1,121 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Heather Davis</title>
+  <title>Contact — Heather Davis</title>
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-  <!-- Navigation -->
   <header>
     <nav>
       <div class="logo">Heather Davis</div>
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="work-portfolio.html">Work Portfolio</a></li>
-        <li><a href="coaching.html">Coaching</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="nav-group">
+          <a href="work-portfolio.html">Work Portfolio</a>
+          <ul class="submenu">
+            <li><a href="coaching.html">Coaching</a></li>
+          </ul>
+        </li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero hero-alt">
+  <section class="hero fade-section">
     <div class="hero-content">
-      <h1>Get in Touch</h1>
-      <p class="hero-subtitle">Let's discuss how I can support your transformation journey.</p>
+      <p class="hero-type">Contact</p>
+      <h1>Let's connect</h1>
+      <p class="hero-subtitle">For strategic conversations, project inquiries, or portfolio collaborations, reach out and let’s start the dialogue.</p>
     </div>
   </section>
 
-  <!-- Contact Information -->
-  <section>
+  <section class="fade-section">
     <div class="container">
-      <h2>Contact Me</h2>
+      <h2>Contact</h2>
       <div class="contact-grid">
         <div class="contact-item">
-          <h3>📧 Email</h3>
-          <p>For inquiries and collaboration opportunities.</p>
+          <h3>Email</h3>
+          <p>Direct inquiries and conversation requests.</p>
           <a href="mailto:hello@heatherdavis.com">hello@heatherdavis.com</a>
         </div>
-
         <div class="contact-item">
-          <h3>💼 LinkedIn</h3>
-          <p>Connect with me professionally.</p>
+          <h3>LinkedIn</h3>
+          <p>Professional connections and project introductions.</p>
           <a href="https://linkedin.com" target="_blank">LinkedIn Profile</a>
         </div>
-
         <div class="contact-item">
-          <h3>🌐 Social Media</h3>
-          <p>Follow my work and insights.</p>
-          <a href="#">Connect on social platforms</a>
+          <h3>Conversation</h3>
+          <p>Open to consulting, coaching, and strategic partnership inquiries.</p>
+          <a href="mailto:hello@heatherdavis.com">Send a note</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Form Section -->
-  <section class="hero-alt">
-    <div class="container" style="max-width: 640px;">
-      <h2 style="text-align: center;">Send Me a Message</h2>
-      <p class="section-intro" style="text-align: center; margin-bottom: 2rem;">Have a question or want to collaborate? Fill out the form and I'll get back to you within 24-48 hours.</p>
-      
+  <section class="section-alt fade-section">
+    <div class="container" style="max-width: 700px;">
+      <h2>Message</h2>
       <form class="form-card">
         <div class="form-field">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required>
         </div>
-
         <div class="form-field">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required>
         </div>
-
         <div class="form-field">
           <label for="subject">Subject</label>
           <select id="subject" name="subject" required>
             <option value="">Select a topic...</option>
-            <option value="ai-coaching">AI Coaching Inquiry</option>
-            <option value="change-management">Change Management</option>
-            <option value="talent-development">Talent Development</option>
-            <option value="l-d-strategy">L&D Strategy</option>
-            <option value="collaboration">Collaboration Opportunity</option>
-            <option value="speaking">Speaking Engagement</option>
+            <option value="ai-adoption">AI Adoption</option>
+            <option value="workforce-modernization">Workforce Modernization</option>
+            <option value="learning-strategy">Learning Strategy</option>
+            <option value="organizational-change">Organizational Change</option>
+            <option value="ai-enablement">AI Enablement</option>
             <option value="other">Other</option>
           </select>
         </div>
-
         <div class="form-field">
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5" required></textarea>
         </div>
-
         <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
       </form>
-
-      <p style="text-align: center; color: var(--text-light); margin-top: 2rem; font-size: 0.95rem;">This is a demonstration form. To actually send messages, you'll need a backend service or email provider integration.</p>
+      <p style="margin-top: 1.75rem; color: var(--text-muted);">This is a demonstration form. To send messages, connect to a backend service or email provider.</p>
     </div>
   </section>
 
-  <!-- Response Time -->
-  <section>
-    <div class="container">
-      <h2 style="text-align: center; margin-bottom: 3rem;">What to Expect</h2>
-      <div class="services-grid">
-        <div class="service-card">
-          <h3>⏱️ Quick Response</h3>
-          <p>I aim to respond to all inquiries within 24-48 hours during business days. Your message is important to me.</p>
-        </div>
-        <div class="service-card accent-pink">
-          <h3>💬 Initial Conversation</h3>
-          <p>We'll discuss your needs, challenges, and goals to determine how I can best support you and your organization.</p>
-        </div>
-        <div class="service-card accent-orange">
-          <h3>📋 Customized Proposal</h3>
-          <p>Based on our conversation, I'll develop a customized approach and proposal tailored to your specific situation.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Types of Services -->
-  <section class="section-alt">
-    <div class="container">
-      <h2 style="text-align: center; margin-bottom: 3rem;">Services I Offer</h2>
-      <div class="services-grid">
-        <div class="service-card">
-          <h3>🤖 AI Coaching & Strategy</h3>
-          <p>Guide your organization through AI adoption with practical strategy and implementation support.</p>
-        </div>
-        <div class="service-card accent-pink">
-          <h3>🔄 Change Management</h3>
-          <p>Lead complex organizational changes with stakeholder engagement and strategic communication.</p>
-        </div>
-        <div class="service-card accent-orange">
-          <h3>👥 Talent & Leadership Development</h3>
-          <p>Develop your talent pipeline and build high-performing leadership teams.</p>
-        </div>
-        <div class="service-card">
-          <h3>📚 Learning & Development Strategy</h3>
-          <p>Design and implement L&D strategies that drive organizational capability and growth.</p>
-        </div>
-        <div class="service-card accent-pink">
-          <h3>💼 Executive Coaching</h3>
-          <p>One-on-one coaching for leaders navigating transformation and building organizational vision.</p>
-        </div>
-        <div class="service-card accent-orange">
-          <h3>🎨 Creative Collaboration</h3>
-          <p>Bring artistic perspective and creative innovation to your organizational challenges.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Availability Section -->
-  <section>
-    <div class="container">
-      <h2 style="text-align: center; margin-bottom: 3rem;">Availability & Engagement Models</h2>
-      <div class="services-grid">
-        <div class="service-card">
-          <h3>One-Time Consulting</h3>
-          <p>Single engagements for specific projects, workshops, or strategic initiatives with defined scope.</p>
-        </div>
-        <div class="service-card accent-pink">
-          <h3>Ongoing Coaching</h3>
-          <p>Regular coaching sessions for sustained development and continuous support through transitions.</p>
-        </div>
-        <div class="service-card accent-orange">
-          <h3>Project-Based</h3>
-          <p>Multi-month engagements for large-scale transformation initiatives and strategic implementations.</p>
-        </div>
-        <div class="service-card">
-          <h3>Workshop & Training</h3>
-          <p>Group workshops and training programs for teams and organizations seeking skill development.</p>
-        </div>
-        <div class="service-card accent-pink">
-          <h3>Speaking & Events</h3>
-          <p>Conference presentations, keynotes, and event engagements on transformation and innovation topics.</p>
-        </div>
-        <div class="service-card accent-orange">
-          <h3>Board Advisory</h3>
-          <p>Strategic advisory relationships with boards and executive teams on organizational transformation.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="contact">
-    <div class="container">
-      <h2>Ready to Get Started?</h2>
-      <p>Reach out today to discuss your needs and explore how we can work together to drive meaningful transformation.</p>
-      <a href="mailto:hello@heatherdavis.com" class="btn btn-primary" style="margin-top: 2rem;">Send an Email</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer>
     <div class="footer-content">
       <div class="footer-links">
         <a href="../index.html">Home</a>
-        <a href="about.html">About Me</a>
+        <a href="about.html">About</a>
         <a href="work-portfolio.html">Work Portfolio</a>
-        <a href="coaching.html">Coaching</a>
         <a href="contact.html">Contact</a>
       </div>
-      <p>&copy; 2026 Heather Davis. All rights reserved.</p>
+      <p>&copy; 2026 Heather Davis</p>
     </div>
   </footer>
 
   <script>
-    // Simple form handling (replace with actual backend service)
+    const sections = document.querySelectorAll('.fade-section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.18 });
+    sections.forEach(section => observer.observe(section));
+
     document.querySelector('form').addEventListener('submit', function(e) {
       e.preventDefault();
-      alert('Thank you for your message! I will get back to you within 24-48 hours.\n\nNote: To enable actual email sending, connect this form to an email service.');
+      alert('Thank you for your message. I will respond shortly.');
       this.reset();
     });
   </script>
