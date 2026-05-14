@@ -22,10 +22,10 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.15) 0%, rgba(99, 102, 241, 0.1) 100%);">
+  <section class="hero hero-alt">
     <div class="hero-content">
       <h1>Get in Touch</h1>
-      <p class="hero-subtitle">Let's discuss how I can support your transformation journey</p>
+      <p class="hero-subtitle">Let's discuss how I can support your transformation journey.</p>
     </div>
   </section>
 
@@ -33,48 +33,48 @@
   <section>
     <div class="container">
       <h2>Contact Me</h2>
-      <div class="contact-content" style="margin-top: 2rem;">
-        <div class="contact-item" style="background: white; border: 2px solid var(--border-color);">
-          <h3 style="color: var(--text-dark);">📧 Email</h3>
-          <p style="color: var(--text-light); margin-bottom: 0.5rem;">For all inquiries and collaboration opportunities</p>
-          <a href="mailto:hello@heatherdavis.com" style="color: var(--primary-color); font-weight: 600; font-size: 1.1rem;">hello@heatherdavis.com</a>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <h3>📧 Email</h3>
+          <p>For inquiries and collaboration opportunities.</p>
+          <a href="mailto:hello@heatherdavis.com">hello@heatherdavis.com</a>
         </div>
 
-        <div class="contact-item" style="background: white; border: 2px solid var(--border-color);">
-          <h3 style="color: var(--text-dark);">💼 LinkedIn</h3>
-          <p style="color: var(--text-light); margin-bottom: 0.5rem;">Connect with me professionally</p>
-          <a href="https://linkedin.com" target="_blank" style="color: var(--primary-color); font-weight: 600; font-size: 1.1rem;">LinkedIn Profile</a>
+        <div class="contact-item">
+          <h3>💼 LinkedIn</h3>
+          <p>Connect with me professionally.</p>
+          <a href="https://linkedin.com" target="_blank">LinkedIn Profile</a>
         </div>
 
-        <div class="contact-item" style="background: white; border: 2px solid var(--border-color);">
-          <h3 style="color: var(--text-dark);">🌐 Social Media</h3>
-          <p style="color: var(--text-light); margin-bottom: 0.5rem;">Follow my work and insights</p>
-          <a href="#" style="color: var(--primary-color); font-weight: 600;">Connect on social platforms</a>
+        <div class="contact-item">
+          <h3>🌐 Social Media</h3>
+          <p>Follow my work and insights.</p>
+          <a href="#">Connect on social platforms</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Form Section -->
-  <section style="background: var(--light-bg);">
-    <div class="container" style="max-width: 600px;">
+  <section class="hero-alt">
+    <div class="container" style="max-width: 640px;">
       <h2 style="text-align: center;">Send Me a Message</h2>
-      <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem;">Have a question or ready to start a conversation? Fill out the form below and I'll get back to you within 24-48 hours.</p>
+      <p class="section-intro" style="text-align: center; margin-bottom: 2rem;">Have a question or want to collaborate? Fill out the form and I'll get back to you within 24-48 hours.</p>
       
-      <form style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);">
-        <div style="margin-bottom: 1.5rem;">
-          <label for="name" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-dark);">Name</label>
-          <input type="text" id="name" name="name" required style="width: 100%; padding: 0.875rem; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='var(--border-color)'">
+      <form class="form-card">
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
         </div>
 
-        <div style="margin-bottom: 1.5rem;">
-          <label for="email" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-dark);">Email</label>
-          <input type="email" id="email" name="email" required style="width: 100%; padding: 0.875rem; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='var(--border-color)'">
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
         </div>
 
-        <div style="margin-bottom: 1.5rem;">
-          <label for="subject" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-dark);">Subject</label>
-          <select id="subject" name="subject" required style="width: 100%; padding: 0.875rem; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='var(--border-color)'">
+        <div class="form-field">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject" required>
             <option value="">Select a topic...</option>
             <option value="ai-coaching">AI Coaching Inquiry</option>
             <option value="change-management">Change Management</option>
@@ -86,15 +86,15 @@
           </select>
         </div>
 
-        <div style="margin-bottom: 1.5rem;">
-          <label for="message" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-dark);">Message</label>
-          <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 0.875rem; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem; font-family: inherit; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='var(--border-color)'"></textarea>
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary" style="width: 100%; cursor: pointer;">Send Message</button>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
       </form>
 
-      <p style="text-align: center; color: var(--text-light); margin-top: 2rem; font-size: 0.95rem;">This is a demonstration form. To actually send messages, you'll need to integrate with a backend service or email provider like Formspree, EmailJS, or similar.</p>
+      <p style="text-align: center; color: var(--text-light); margin-top: 2rem; font-size: 0.95rem;">This is a demonstration form. To actually send messages, you'll need a backend service or email provider integration.</p>
     </div>
   </section>
 
@@ -120,7 +120,7 @@
   </section>
 
   <!-- Types of Services -->
-  <section style="background: var(--light-bg);">
+  <section class="section-alt">
     <div class="container">
       <h2 style="text-align: center; margin-bottom: 3rem;">Services I Offer</h2>
       <div class="services-grid">
