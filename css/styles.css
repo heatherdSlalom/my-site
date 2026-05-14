@@ -1,11 +1,11 @@
 ﻿:root {
-  --background: #f5efe3;
-  --surface: #ffffff;
-  --text-dark: #141414;
-  --text-muted: #565551;
-  --accent: #4d6d92;
-  --border: rgba(20, 20, 20, 0.08);
-  --shadow: rgba(20, 20, 20, 0.08);
+  --background: #0f1318;
+  --surface: #f7f2eb;
+  --text-dark: #151816;
+  --text-muted: #4d504e;
+  --accent: #b85a35;
+  --border: rgba(17, 21, 26, 0.12);
+  --shadow: rgba(15, 20, 25, 0.18);
 }
 
 * {
@@ -13,6 +13,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -81,9 +82,16 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(245, 239, 227, 0.94);
+  background: rgba(15, 19, 24, 0.94);
   backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 1.6rem;
+}
+
+nav,
+.logo,
+.nav-links > li > a {
+  color: white;
 }
 
 nav {
@@ -134,6 +142,10 @@ nav {
 .submenu a:hover::after {
   width: 100%;
   left: 0;
+}
+
+header .nav-links > li > a {
+  color: white;
 }
 
 .nav-group {
@@ -212,27 +224,61 @@ nav {
 .hero-alt,
 section {
   padding: 6rem 5% 4rem;
+  color: var(--text-dark);
+  background: rgba(247, 242, 235, 0.94);
+  border-top: 1px solid rgba(17, 21, 26, 0.06);
 }
 
 .hero {
   min-height: 75vh;
   display: grid;
   place-items: center;
-  background: linear-gradient(180deg, #f7f1e8 0%, #f5efe3 100%);
+  background: #12161f;
+  color: var(--surface);
+}
+
+.hero.about {
+  padding: 4rem 5% 3rem;
+}
+
+.hero.about h1 {
+  font-size: clamp(2.8rem, 4vw, 3.2rem);
 }
 
 .hero-content {
   max-width: 860px;
   margin: 0 auto;
+  position: relative;
+}
+
+.hero-content::before {
+  content: '';
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6.5rem;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 999px;
 }
 
 .hero-type {
   display: inline-block;
   margin-bottom: 1.5rem;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.68);
   font-size: 0.95rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.hero .hero-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero .btn-secondary {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.24);
 }
 
 .hero-subtitle {
